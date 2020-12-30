@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proof-masters",
+      "handler": "proof-master.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proof-masters/count",
+      "handler": "proof-master.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proof-masters/:id",
+      "handler": "proof-master.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proof-masters",
+      "handler": "proof-master.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proof-masters/:id",
+      "handler": "proof-master.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proof-masters/:id",
+      "handler": "proof-master.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

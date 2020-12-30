@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/price-range-masters",
+      "handler": "price-range-master.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/price-range-masters/count",
+      "handler": "price-range-master.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/price-range-masters/:id",
+      "handler": "price-range-master.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/price-range-masters",
+      "handler": "price-range-master.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/price-range-masters/:id",
+      "handler": "price-range-master.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/price-range-masters/:id",
+      "handler": "price-range-master.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

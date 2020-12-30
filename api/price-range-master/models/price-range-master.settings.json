@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_range_master",
+  "info": {
+    "name": "price_range_master"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Km_range": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true,
+      "default": "0"
+    },
+    "vehicle_id": {
+      "model": "vehicle-master",
+      "via": "price_range_masters"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "status_master",
+  "info": {
+    "name": "status_master"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

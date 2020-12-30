@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vehicle-masters",
+      "handler": "vehicle-master.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vehicle-masters/count",
+      "handler": "vehicle-master.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vehicle-masters/:id",
+      "handler": "vehicle-master.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vehicle-masters",
+      "handler": "vehicle-master.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vehicle-masters/:id",
+      "handler": "vehicle-master.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vehicle-masters/:id",
+      "handler": "vehicle-master.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

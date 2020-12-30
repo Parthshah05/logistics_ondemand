@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "request_status",
+  "info": {
+    "name": "request_status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
