@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "price_range_master",
   "info": {
-    "name": "price_range_master"
+    "name": "price_range",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,8 +21,8 @@
       "default": "0"
     },
     "vehicle_id": {
-      "model": "vehicle-master",
-      "via": "price_range_masters"
+      "via": "price_range_masters",
+      "model": "vehicle-master"
     }
   }
 }

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "status_master",
+  "collectionName": "proof_type",
   "info": {
-    "name": "status",
-    "description": ""
+    "name": "proofType"
   },
   "options": {
     "increments": true,

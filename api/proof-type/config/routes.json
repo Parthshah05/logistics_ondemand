@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proof-types",
+      "handler": "proof-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proof-types/count",
+      "handler": "proof-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proof-types/:id",
+      "handler": "proof-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proof-types",
+      "handler": "proof-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proof-types/:id",
+      "handler": "proof-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proof-types/:id",
+      "handler": "proof-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

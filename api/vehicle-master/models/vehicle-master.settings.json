@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "vehicle_master",
   "info": {
-    "name": "vehicle_master"
+    "name": "vehicle",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,12 +28,8 @@
       "type": "string"
     },
     "price_range_masters": {
-      "via": "vehicle_id",
-      "collection": "price-range-master"
-    },
-    "subscription_masters": {
-      "via": "vehicle_id",
-      "collection": "subscription-master"
+      "collection": "price-range-master",
+      "via": "vehicle_id"
     }
   }
 }

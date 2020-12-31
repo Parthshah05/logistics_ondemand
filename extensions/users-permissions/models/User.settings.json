@@ -76,9 +76,6 @@
       "required": true,
       "unique": true
     },
-    "age": {
-      "type": "integer"
-    },
     "active": {
       "type": "boolean",
       "default": true
@@ -91,9 +88,9 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "proof_master": {
+    "proofs": {
       "via": "user_id",
-      "model": "proof-master"
+      "collection": "proof-master"
     }
   }
 }
