@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_vehicle",
+  "info": {
+    "name": "UserVehicle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "vehicleNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "chasisNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "comments": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "vehicle": {
+      "model": "vehicle-master"
+    }
+  }
+}

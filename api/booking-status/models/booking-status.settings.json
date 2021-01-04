@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booking_status",
+  "info": {
+    "name": "bookingStatus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "booking_id": {
+      "model": "booking"
+    },
+    "status_id": {
+      "model": "status-master"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booking_master",
+  "info": {
+    "name": "Booking"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "itemName": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "pickup": {
+      "type": "datetime"
+    },
+    "pickup_LatLong": {
+      "type": "json"
+    },
+    "weight": {
+      "type": "string",
+      "required": true
+    },
+    "parcelValue": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string",
+      "required": true
+    },
+    "vehicle": {
+      "model": "vehicle-master"
+    },
+    "price": {
+      "required": true,
+      "type": "integer"
+    },
+    "insurance": {
+      "type": "boolean",
+      "default": true
+    },
+    "Transporter_vehicle": {
+      "model": "user-vehicle"
+    },
+    "Drop_UserName": {
+      "type": "string",
+      "required": true
+    },
+    "Drop_UserAddress": {
+      "type": "text",
+      "required": true
+    },
+    "Drop_UserMobile": {
+      "type": "integer",
+      "required": true
+    },
+    "DropTime": {
+      "type": "datetime"
+    },
+    "Drop_LatLong": {
+      "type": "json"
+    },
+    "comments": {
+      "type": "text"
+    },
+    "requestType": {
+      "model": "request-status"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_subscription",
+  "info": {
+    "name": "UserSubscription"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "subscription": {
+      "model": "subscription-master"
+    }
+  }
+}
